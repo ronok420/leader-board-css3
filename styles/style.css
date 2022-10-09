@@ -96,3 +96,88 @@ hr {
 /* --------------------------
 ----------------------------------------latest course
 ------------------------------------------------------------------------------- */
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+
+}
+
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#number {
+    margin-left: 5px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.course-duration {
+    color: #FF4A60;
+}
+
+
+
+/* ........................
+       media query 
+       ........................ */
+
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+
+
+
+
+}
+
+
+/* for ipad */
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
